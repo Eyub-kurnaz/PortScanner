@@ -80,9 +80,9 @@ open_port_list_for_tcp = []
 
 def main():
     cpu_count = os.cpu_count()
-    target_ip = "104.247.168.18"
-    port_range = "1-1000"
-    scan_type = "-sV"
+    target_ip = "target_ip" #Change this line exapmle: 192.168.1.1
+    port_range = "start_port-end_porrt" #Change this line  example: 0-1000
+    scan_type = "-sV" #Change this line example : -sV ,-sS ,-sT
     start_port = int(port_range.split("-")[0])
     end_port = int(port_range.split("-")[1])
 
